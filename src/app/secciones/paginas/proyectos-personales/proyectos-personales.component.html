@@ -1,1 +1,14 @@
-<p>proyectos-personales works!</p>
+<h1>Proyectos Personales</h1>
+
+
+<div *ngFor="let proyecto of misProyectos">
+    <h2> {{proyecto.nombre}} </h2>
+
+    <p>
+        {{proyecto.descripcion}}
+    </p>
+
+    <p>
+        {{proyecto.tecnologiasUtilizadas}}
+    </p>
+</div>
