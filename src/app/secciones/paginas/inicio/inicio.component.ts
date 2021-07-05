@@ -4,6 +4,11 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styles: [
+    `
+    a {
+      text-decoration: none;
+    }
+    `
   ]
 })
 export class InicioComponent implements OnInit {
