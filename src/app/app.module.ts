@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SeccionesModule } from './secciones/secciones.module';
 import { SharedModule } from './shared/shared.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +16,8 @@ import { SharedModule } from './shared/shared.module';
     AppRoutingModule,
     
     SharedModule,
-    SeccionesModule
+    SeccionesModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

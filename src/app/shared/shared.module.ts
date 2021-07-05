@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
 
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+
+
+
 
 
 @NgModule({
@@ -11,7 +15,10 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule // Permite navegar (routerLink)
+    RouterModule, // Permite navegar (routerLink)
+    PrimeNgModule
+
+    
   ],
   exports: [
     MenuComponent
