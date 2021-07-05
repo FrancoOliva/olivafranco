@@ -5,6 +5,7 @@ import { MiniAplicacionesComponent } from './paginas/mini-aplicaciones/mini-apli
 import { CertificacionesComponent } from './paginas/certificaciones/certificaciones.component';
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 
@@ -17,7 +18,8 @@ import { InicioComponent } from './paginas/inicio/inicio.component';
     InicioComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimeNgModule
   ],
   exports: [
     ProyectosPersonalesComponent,

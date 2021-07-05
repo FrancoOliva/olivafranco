@@ -2,6 +2,6 @@
 
 html, body {
     margin: 10px;
-    background-color: var( --surface-b );
+    background-color: var( --surface-d );
     font-family: var( --font-family );
 }

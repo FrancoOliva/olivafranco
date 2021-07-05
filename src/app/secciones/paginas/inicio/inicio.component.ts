@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
     `
     a {
       text-decoration: none;
+    },
+    img {
+      height: auto;
+      width: 30rem;
     }
     `
   ]
