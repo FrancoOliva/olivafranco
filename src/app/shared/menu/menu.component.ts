@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { MenuItem } from 'primeng/api/menuitem';
 
 
@@ -22,22 +23,40 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.items = [{
-      label: 'File',
-      items: [
-          {label: 'New', icon: 'pi pi-fw pi-plus'},
-          {label: 'Download', icon: 'pi pi-fw pi-download'}
-      ]
-  },
-  {
-      label: 'Edit',
-      items: [
-          {label: 'Add User', icon: 'pi pi-fw pi-user-plus'},
-          {label: 'Remove User', icon: 'pi pi-fw pi-user-minus'}
-      ]
-  }];
-
-
+      this.items = [
+        {
+          label: 'Inicio',
+          icon: 'pi pi-fw pi-home',
+          routerLink: '/'
+        },
+        {
+            label: 'Proyectos',
+            icon: 'pi pi-folder',
+            items: [
+              {
+                label: 'Personales',
+                routerLink: 'proyectos-personales'
+              },
+              {
+                label: 'Cursos Online',
+                routerLink: 'mini-aplicaciones'
+              }
+            ]
+        },
+        {
+            label: 'Certificaciones',
+            icon: 'pi pi-fw pi-file-pdf',
+            routerLink: 'certificaciones'
+        },
+        {
+          label: 'Información Personal',
+          icon: 'pi pi-fw pi-user',
+          routerLink: 'info-personal'
+        }
+    ];
   }
 
+
 }
+
+

@@ -7,6 +7,8 @@ import { SeccionesModule } from './secciones/secciones.module';
 import { SharedModule } from './shared/shared.module';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
     
     SharedModule,
     SeccionesModule,
+    
     
   ],
   providers: [],
