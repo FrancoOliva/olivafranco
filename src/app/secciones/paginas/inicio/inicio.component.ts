@@ -4,6 +4,7 @@ export interface Card {
   titulo: string;
   descripcion: string;
   btn: string;
+  ruta?: string;
 }
 
 @Component({
