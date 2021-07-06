@@ -6,6 +6,7 @@ import { CertificacionesComponent } from './paginas/certificaciones/certificacio
 import { SobremiComponent } from './paginas/sobremi/sobremi.component';
 import { InicioComponent } from './paginas/inicio/inicio.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { CardComponent } from './paginas/card/card.component';
 
 
 
@@ -15,7 +16,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     MiniAplicacionesComponent,
     CertificacionesComponent,
     SobremiComponent,
-    InicioComponent
+    InicioComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     MiniAplicacionesComponent,
     CertificacionesComponent,
     SobremiComponent,
-    InicioComponent
+    InicioComponent,
+    CardComponent
   ]
 })
 export class SeccionesModule { }
