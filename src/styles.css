@@ -5,3 +5,10 @@ html, body {
     background-color: var( --surface-d );
     font-family: var( --font-family );
 }
+
+
+
+.p-card .p-card-content {
+    padding: 1rem 0;
+    height: 6rem;
+}
