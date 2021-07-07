@@ -2,13 +2,21 @@
 
 
 <div *ngFor="let proyecto of misProyectos">
-    <h2> {{proyecto.nombre}} </h2>
 
-    <p>
-        {{proyecto.descripcion}}
-    </p>
+    <p-card [header]="proyecto.nombre" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+        
+        <p>
+            {{proyecto.descripcion}}
+        </p>
 
-    <p>
-        {{proyecto.tecnologiasUtilizadas}}
-    </p>
+        <p>
+            <strong>Tecnologías: </strong>{{proyecto.tecnologiasUtilizadas}}
+        </p>
+
+        <p>
+            <strong>Actualmente lo estoy desarrollando de nuevo pero con Angular.</strong>
+        </p>
+    </p-card>
+
+
 </div>

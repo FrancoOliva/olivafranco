@@ -1,15 +1,21 @@
 <p-card [header]="contenidoCards.titulo">
+    
 
     <ng-template pTemplate="header">
         <img src="assets/angular-logo.png">
     </ng-template>
 
     
-    {{contenidoCards.descripcion}}
+    
+    <p>
+        {{contenidoCards.descripcion}}
+    </p>
+    
+    
     
 
     <ng-template pTemplate="footer">
-        <button pButton pRipple type="button" [label]="contenidoCards.btn" class="p-button-raised p-button-success"></button>        
+        <button pButton pRipple type="button" [label]="contenidoCards.btn" class="p-button-raised p-button-success" (click)="verRuta(contenidoCards.ruta)"></button>     
     </ng-template>
     
 </p-card>
