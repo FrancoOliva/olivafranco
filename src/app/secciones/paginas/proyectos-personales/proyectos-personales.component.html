@@ -3,20 +3,24 @@
 
 <div *ngFor="let proyecto of misProyectos">
 
-    <p-card [header]="proyecto.nombre" [style]="{'width': '25rem', 'margin-bottom': '2em'}">
+    <div class="p-grid">
+        <div class="p-col-12 p-md-6 p-lg-3">
+            <p-card [header]="proyecto.nombre">
         
-        <p>
-            {{proyecto.descripcion}}
-        </p>
-
-        <p>
-            <strong>Tecnologías: </strong>{{proyecto.tecnologiasUtilizadas}}
-        </p>
-
-        <p>
-            <strong>Actualmente lo estoy desarrollando de nuevo pero con Angular.</strong>
-        </p>
-    </p-card>
+                <p>
+                    {{proyecto.descripcion}}
+                </p>
+        
+                <p>
+                    <strong>Tecnologías: </strong>{{proyecto.tecnologiasUtilizadas}}
+                </p>
+        
+                <p>
+                    <strong>Actualmente lo estoy desarrollando de nuevo pero con Angular.</strong>
+                </p>
+            </p-card>
+        </div>
+    </div>
 
 
 </div>
