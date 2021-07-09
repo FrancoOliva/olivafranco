@@ -12,9 +12,6 @@ export interface Card {
   templateUrl: './inicio.component.html',
   styles: [
     `
-    a {
-      text-decoration: none;
-    },
     img {
       height: auto;
       width: 30rem;

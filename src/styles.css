@@ -1,3 +1,8 @@
+/* ANIMATE CSS */
+@import 'animate.css/animate.min';
+
+
+
 /* You can add global styles to this file, and also import other style files */
 
 html, body {
@@ -11,6 +16,12 @@ html, body {
 
 h1, h2 {
     color: var( --text-color );
+}
+
+a:-webkit-any-link {
+    color: var( --text-color );
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 

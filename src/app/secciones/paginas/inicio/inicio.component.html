@@ -10,18 +10,16 @@
 <p>
     Todo esto fue desarrollado utilizando 
     <strong>Angular</strong>
-    y  <a href="https://www.primefaces.org/primeng/" target="_blank" rel="noopener noreferrer">PrimeNg</a>.
+    y  <a href="https://www.primefaces.org/primeng/" target="_blank" rel="noopener noreferrer">PrimeNG</a>.
 </p>
 
+
 <!-- Contenido -->
-
-
-
 <div class="p-grid">
 
     <div
     *ngFor="let card of cards"
-    class="p-col-12 p-md-6 p-lg-3"> 
+    class="p-col-12 p-md-6 p-lg-3 animate__animated animate__fadeIn"> 
         <app-card [contenidoCards]="card"></app-card>
     </div>
 
