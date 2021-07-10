@@ -24,5 +24,9 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
+.text-rojo {
+    color: rgb(184, 26, 26);
+}
+
 
 

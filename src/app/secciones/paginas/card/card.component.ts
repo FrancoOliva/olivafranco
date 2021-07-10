@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
 
   @Input() contenidoCards!: Card;
 
-  constructor( private router: Router) { }
+  constructor( private router: Router ) { }
 
   ngOnInit(): void {
   }
