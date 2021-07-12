@@ -14,10 +14,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MiniAplicacionesComponent implements OnInit {
 
+  display: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  
+
+  mostrarDialog() {
+    this.display = true;
   }
 
   
