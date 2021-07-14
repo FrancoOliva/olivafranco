@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 export interface Card {
   titulo: string;
@@ -11,20 +11,14 @@ export interface Card {
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styles: [
-    `
-    img {
-      height: auto;
-      width: 30rem;
-    }
-    `
   ]
 })
-export class InicioComponent implements OnInit {
+export class InicioComponent {
 
   cards: Card[] = [
     {
       titulo: 'Proyectos Personales',
-      descripcion: 'Actualmente estoy pasando una aplicación que desarrollé con Framework7 a Angular. Haciendo click en "Saber más..." vas a poder ver una descripción más detallada.',
+      descripcion: 'Actualmente estoy pasando una aplicación que desarrollé con Framework7 a Angular. Haciendo click en "Ver Proyectos" vas a poder ver una descripción más detallada.',
       btn: 'Ver Proyectos',
       ruta: '/proyectos-personales'
     },
@@ -48,11 +42,5 @@ export class InicioComponent implements OnInit {
     }
   ];
 
-  constructor() { }
-
-  ngOnInit(): void {
-
-    
-  }
 
 }

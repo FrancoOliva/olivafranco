@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Proyectos } from '../interfaces/proyectos.interface';
 
 @Component({
@@ -7,7 +7,7 @@ import { Proyectos } from '../interfaces/proyectos.interface';
   styles: [
   ]
 })
-export class ProyectosPersonalesComponent implements OnInit {
+export class ProyectosPersonalesComponent {
 
   misProyectos: Proyectos[] = [
     {
@@ -19,9 +19,5 @@ export class ProyectosPersonalesComponent implements OnInit {
     }
   ]
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 import { InicioComponent } from './secciones/paginas/inicio/inicio.component';
 import { MiniAplicacionesComponent } from './secciones/paginas/mini-aplicaciones/mini-aplicaciones.component';
 import { ProyectosPersonalesComponent } from './secciones/paginas/proyectos-personales/proyectos-personales.component';
@@ -35,7 +35,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules
+    })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

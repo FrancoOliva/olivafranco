@@ -28,5 +28,13 @@ a:-webkit-any-link {
     color: rgb(184, 26, 26);
 }
 
+.certificado-img {
+    width: 540px;
+    height: auto;
+}
+
+.margin-i {
+    margin-right: 1rem;
+}
 
 

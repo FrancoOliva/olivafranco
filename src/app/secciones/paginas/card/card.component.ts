@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Router } from '@angular/router';
 import { Card } from '../inicio/inicio.component';
 
@@ -9,14 +9,11 @@ import { Card } from '../inicio/inicio.component';
     
   ]
 })
-export class CardComponent implements OnInit {
+export class CardComponent{
 
   @Input() contenidoCards!: Card;
 
   constructor( private router: Router ) { }
-
-  ngOnInit(): void {
-  }
 
   verRuta(ruta:string){
     console.log('Ver nueva ruta');
