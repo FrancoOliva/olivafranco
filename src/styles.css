@@ -29,8 +29,9 @@ a:-webkit-any-link {
 }
 
 .certificado-img {
-    width: 540px;
+    width: 100%;
     height: auto;
+    
 }
 
 .margin-i {
